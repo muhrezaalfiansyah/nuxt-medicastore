@@ -1,80 +1,95 @@
-# Nuxt Minimal Starter
+NUXT x MEDICASTORE
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+🟩 prerequisite
 
-## Setup
 
-Make sure to install dependencies:
+1. Install NVM di macOS & Linux (cara resmi)
 
-```bash
-# npm
-npm install
+    * Step 1: Jalankan perintah ini di terminal
 
-# pnpm
-pnpm install
+        Ini perintah resmi dari dokumentasi NVM:
 
-# yarn
-yarn install
+            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-# bun
-bun install
-```
+        Atau pakai wget:
 
-## Development Server
+            wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 
-Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
-npm run dev
+    * Step 2: Load script NVM
 
-# pnpm
-pnpm dev
+        Tambahkan ke shell config:
 
-# yarn
-yarn dev
+        Untuk zsh (macOS default):
 
-# bun
-bun run dev
-```
+        nano ~/.zshrc
 
-## Production
+        Tambahkan baris ini (harusnya otomatis ditambah oleh installer):
 
-Build the application for production:
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-```bash
-# npm
-npm run build
+        Lalu reload:
 
-# pnpm
-pnpm build
+        source ~/.zshrc
 
-# yarn
-yarn build
+    * Step 3: Cek apakah nvm sudah terinstall
+        nvm --version
+        Jika muncul angka versi → sukses ✔
 
-# bun
-bun run build
-```
+    * Step 4: Install Node versi 20 (rekomendasi untuk project ini)
 
-Locally preview production build:
+        Misal Node 20:
 
-```bash
-# npm
-npm run preview
+        nvm install 20
 
-# pnpm
-pnpm preview
+        Set default:
 
-# yarn
-yarn preview
+        nvm use 20
+        nvm alias default 20
 
-# bun
-bun run preview
-```
+2. Install NVM di Windows (PENTING! berbeda dari macOS)
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+    Di Windows tidak memakai script curl, tapi memakai NVM for Windows:
 
-bootstrap grid system
+    * Step 1: Download NVM for Windows
 
-xs,sm,md -- mobile layout
-lg,xl,xxl -- desktop layout
+        Download dari repo resmi:
+        https://github.com/coreybutler/nvm-windows/releases
+
+        File yang kamu cari:
+        nvm-setup.exe
+
+    * Step 2: Install seperti biasa
+
+        Saat install, kamu harus pilih:
+
+        Folder untuk NVM
+
+        Folder untuk Node (biarkan default)
+
+    * Step 3: Cek instalasi
+
+        Buka CMD / PowerShell:
+
+        nvm version
+
+    * Step 4: Install Node (versi 20 di rekomendasikan untuk project ini)
+        nvm install 20
+        nvm use 20
+
+3. Menjalankan project
+
+    * Step 1: install depedencies Node
+        jalankan npm install / npm i
+    * Step 2: Start Dev Server
+        npm run dev
+
+        Start the development server on `http://localhost:3000`:
+    * Step 3: (Production) build project
+        npm run build
+
+4. bootstrap grid system
+
+    xs,sm,md -- mobile layout
+    lg,xl,xxl -- desktop layout
