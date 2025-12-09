@@ -2,6 +2,7 @@ NUXT x MEDICASTORE
 
 🟩 prerequisite
 
+Notes : Jalankan node -v / npm -v jika return nya angka, maka lanjut ke no 3. no 1 & 2 hanya untuk yang belum install node js
 
 1. Install NVM di macOS & Linux (cara resmi)
 
