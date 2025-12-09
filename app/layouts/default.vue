@@ -318,13 +318,17 @@
         </nav>
 
         <!-- SHIPPING ADDRESS -->
-        <div class="border-top py-2 small">
+        <div class="border-top py-0 small">
             <div class="container d-flex align-items-center justify-content-end gap-1">
                 <i class="bi bi-geo-alt text-primary"></i>
                 <span>Di kirim ke -</span>
                 <a href="#" class="text-decoration-none">Tambah Alamat</a>
                 <i class="bi bi-caret-down-fill small"></i>
             </div>
+        </div>
+        
+        <div class="container">
+            <CarouselParallax />
         </div>
         
         <!-- PAGE CONTENT -->
